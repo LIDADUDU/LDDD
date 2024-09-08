@@ -19,10 +19,11 @@
     <canvas id=c></canvas>
 </body>
 <script>
-	document.addEventListener('dblclick', function() {
-    // 当文档被双击时，重定向到index.html
-    window.location.href = 'index.html';
-    // 获取canvas元素，并创建WebGL上下文
+    // 为整个文档添加双击事件监听器
+    document.addEventListener('dblclick', function () {
+        // 当文档被双击时，重定向到index.html
+        window.location.href = 'index.html';
+    });
     var gl = c.getContext('webgl', { preserveDrawingBuffer: true });
 
     // 设置canvas的宽度和高度为窗口的宽度和高度
