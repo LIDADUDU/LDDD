@@ -19,6 +19,9 @@
     <canvas id=c></canvas>
 </body>
 <script>
+	document.addEventListener('dblclick', function() {
+    // 当文档被双击时，重定向到index.html
+    window.location.href = 'index.html';
     // 获取canvas元素，并创建WebGL上下文
     var gl = c.getContext('webgl', { preserveDrawingBuffer: true });
 
